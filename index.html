@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Created by Niels Molenaar -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vanilla Javascript Client for Elastic App Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./app-search-favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/styles/app-search-style.css">
+  </head>
+  <body>
+    <div>
+        <div id="search-box" search-key="search-************************" engine-name="888888888888" endpoint="https://my-deployment-******.ent.*********.azure.elastic-cloud.com">
+            <div id="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Type to search..">
+                <div id="suggestion-box">
+                    <!-- here data are inserted from javascript -->
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+        <div id="search-result">
+            <!-- here data are inserted from javascript -->
+            <div style="margin-top: calc(100vh - 146px); display:block">
+            <div id="search-result-footer">
+                <span class="powered-by">
+                    <small>Powered by </small>
+                    <span class="logo"><img src="https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/blt20a39bcb050f189a/5d0823d3616162aa5a857047/logo-app-search-32-color.svg" class="img-fluid icon-32" alt="Elastic App Search"></span>
+                    Elastic App Search
+                </span>
+            </div>
+        </div>  
+    </div>  
+     <script src="./assets/scripts/app-search-script.js"></script>
+  </body>
+</html>
